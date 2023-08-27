@@ -3,7 +3,7 @@
 <!--<![endif]-->
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Minecraft HMCL - 社区</title>
+  <title>Minecraft HMCL - 新闻</title>
   <meta name="google" content="notranslate" />
   <meta http-equiv="X-UA-Compatible" content="Inav_support_statsE=edge">
   <meta name="description" content="HMCL - 一个多系统支持的我的世界启动器，以增加你的游戏体验">
@@ -20,8 +20,6 @@
   <link rel="stylesheet" href="./HMCL_files/download.css">
   <link rel="stylesheet" href="./HMCL_files/notifications.css">
   <script src="https://kit.fontawesome.com/d82620443d.js" crossorigin="anonymous"></script>
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-  <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
     var system ={};
     var p = navigator.platform;
@@ -70,8 +68,8 @@
                   关于 </a>
               </li>
               <li class="nav-item">
-              <a class="nav-link position-relative" href="./community.html" target="_self">
-                社区 </a>
+                <a class="nav-link position-relative" href="./community.html" target="_self">
+                  社区 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link position-relative" href="./mod.html" target="_self">
@@ -99,10 +97,10 @@
           <div class="box-trans">
             <div x-data="{otherDownloads: false}">
               <div x-show="!otherDownloads" class="download-box">
-                <h3 class="mb-0"><span>当你步入我们的游戏社区，</br>你将踏入一个充满激情、创意和无限可能的世界。</span></h3>
-                <h1 class="mb-3">HMCL 玩家社区</h1>
-                <p id="download-desc">我们欢迎所有喜爱游戏的玩家，无论你是新手还是老将，无论你钟爱哪种游戏类型，我们都希望为你打造一个家的感觉。</p>
-              </div>
+                <h3 class="mb-0"><span>将你的 Minecraft 体验提升到全新的水平！</span></h3>
+                <h1 class="mb-3">HMCL重要新闻</h1>
+                <p id="download-desc">Minecraft HMCL 的新闻通知会在这里显示。</p>
+              </div><hr>
             </div>
           </div>
         </div>
@@ -116,10 +114,24 @@
   </div>
   <div class="changelog-section">
     <div class="container">
-      <h1>HMCL交流社区</h1>
-      <div id="vcomments"></div>
+      <h1>HMCL 新闻及通知</h1>
+      <div class="accordion" x-data="{showMore: false}">
+        <div class="laby-accordion-item" x-show="showMore || parseInt(0) &lt; 5">
+          <div class="accordion-header" id="headingTwo">
+            <a class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-311">
+              通知
+            </a>
+          </div>
+          <div id="collapse-311" class="accordion-collapse collapse show">
+            <div class="laby-accordion-body">
+              2023/8/27日，</br>HMCL (非官方) 网站正式运营。
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
   <footer id="footer">
     <div class="lm-footer row">
       <div class="col-sm-4">
@@ -179,33 +191,11 @@
       </div>
     </div>
   </footer>
-  <div id="cookie-notice" style="display: none;">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-10">
-          <p>
-            此网站使用了 Github，了解更多信息请访问 <a href="https://www.Github.com">隐私政策</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 <script type="text/javascript" src="./Minecraft Labymod_files/runtime.f34e6c67.js.下载"></script>
 <script type="text/javascript" src="./Minecraft Labymod_files/app.fafb3bb9.js.下载"></script>
 <script type="text/javascript" src="./Minecraft Labymod_files/auth.9642fadb.js.下载"></script>
 <script type="text/javascript" src="./Minecraft Labymod_files/navigation.6ba694ba.js.下载" defer=""></script>
 <script type="text/javascript" src="./Minecraft Labymod_files/download.054a32dc.js.下载" defer=""></script>
-<script src="https://cdn.bootcdn.net/ajax/libs/valine/1.5.1/Valine.min.js"></script>
-<script>
-  new Valine({
-    el: '#vcomments',
-    appId: 'vyd4WmlViofygFAMoTllQ0lv-gzGzoHsz',
-    appKey: 'DolU2P5i0Poz0H0mbjSnWo7i',
-    placeholder: '请输入评论...',
-    avatar: 'robohash',
-    path: window.location.pathname,
-  });
-</script>
 </body>
 </html>
